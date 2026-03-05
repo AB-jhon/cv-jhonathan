@@ -3,7 +3,7 @@ import foto from './assets/foto.jpeg'
 
 const cvData = {
   name: "Jhonathan Anota",
-  title: "Ingeniero de Software e Implementación",
+  title: "Ingeniero en Sistemas Computacionales",
   about:
     "Ingeniero de software con más de 10 años de experiencia técnica en optimización de sistemas y gestión de bases de datos SQL Server. Actualmente evolucionando mi stack tecnológico hacia el desarrollo moderno con React y Python. Me destaco por mi capacidad de aprendizaje autodidacta y mi experiencia resolviendo problemas complejos en aplicaciones e implementación de ecosistemas.",
   contact: {
