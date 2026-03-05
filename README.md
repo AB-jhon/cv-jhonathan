@@ -1,16 +1,32 @@
-# React + Vite
+# 💼 CV Digital — Jhonathan Anota Badillo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CV interactivo desarrollado con React y Vite, desplegado en Vercel.
 
-Currently, two official plugins are available:
+## 🚀 Demo en vivo
+[Ver CV](https://cv-jhonathan.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologías usadas
+- React.js
+- Vite
+- JavaScript ES6+
+- CSS-in-JS (estilos en línea)
 
-## React Compiler
+## ✨ Características
+- Modo oscuro / claro
+- Diseño responsive
+- Animaciones fade-in
+- Línea de tiempo interactiva
+- Tabs de experiencia laboral
+- Foto de perfil
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📦 Instalación local
+```bash
+git clone https://github.com/TU-USUARIO/cv-jhonathan.git
+cd cv-jhonathan
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 👤 Autor
+**Jhonathan Anota Badillo**  
+[Portfolio Web](https://compendio-desarrollo-web.vercel.app) · [GitHub](https://github.com/AB-jhon)
