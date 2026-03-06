@@ -3,7 +3,7 @@
 CV interactivo desarrollado con React y Vite, desplegado en Vercel.
 
 ## 🚀 Demo en vivo
-[Ver CV](https://cv-jhonathan-6118wl8qi-jhonathan-anotas-projects.vercel.app/)
+[Ver CV](https://cv-jhonathan.vercel.app/)
 
 ## 🛠️ Tecnologías usadas
 - React.js
