@@ -3,7 +3,7 @@ import foto from './assets/foto.jpeg'
 
 const cvData = {
   name: "Jhonathan Anota",
-  title: "Ingeniero en Sitemas Computacionales",
+  title: "Ing. en Sistemas Computacionales",
   about:
     "Ingeniero de software con más de 10 años de experiencia técnica en optimización de sistemas y gestión de bases de datos SQL Server. Actualmente evolucionando mi stack tecnológico hacia el desarrollo moderno con React y Python. Me destaco por mi capacidad de aprendizaje autodidacta y mi experiencia resolviendo problemas complejos en aplicaciones e implementación de ecosistemas.",
   contact: {
@@ -163,7 +163,7 @@ export default function CV() {
               Jhonathan Anota
             </h1>
             <p style={{ color: accent, fontSize: "12px", fontWeight: "600", letterSpacing: "1.5px", textTransform: "uppercase" }}>
-              Ing. de Software e Implementación
+              Ing. en Sistemas Computacionales
             </p>
 
             <div style={{ width: "40px", height: "2px", background: accent, margin: "16px auto" }} />
