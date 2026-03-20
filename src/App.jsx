@@ -201,14 +201,14 @@ export default function CV() {
                 { icon: "✅", label: "Compromiso con la excelencia y cumplimiento de objetivos" },
                 { icon: "🎨", label: "Desarrollo de interfaces centradas en el usuario (UI/UX)" },
               ] .map ((skill, i) => (
-                <span key={1} style={{
+                <span key={i} style={{
                   background: `#2563EB18`,
                   color: "#2563EB",
                   border: `1px solid #2563EB40`,
                   borderRadius: "20px",
                   paddingTop: "5px",
                   paddingBottom: "5px",
-                  paddingleft: "12px",
+                  paddingLeft: "12px",
                   paddingRight: "12px",
                   fontSize: "12px",
                   fontWeight: "500",
@@ -220,6 +220,7 @@ export default function CV() {
                 </span>
               ))}
             </div>
+           </div>
 
           {/* Contact */}
           <div className="fade-in" style={{
