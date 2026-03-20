@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import foto from './assets/foto.jpeg'
+import jsPDF from "jspdf";
+import html2canvas from "html2canvas";
 
 const cvData = {
   name: "Jhonathan Anota",
@@ -88,6 +90,17 @@ export default function CV() {
   const accentLight = dark ? "#1D4ED8" : "#3B82F6";
   const border = dark ? "#334155" : "#E2E8F0";
 
+  const downloadPDF = async () => {
+  const element = document.getElementById('cv-content');
+  const canvas = await html2canvas(element, { scale: 2, useCORS: true });
+  const imgData = canvas.toDataURL('image/png');
+  const pdf = new jsPDF('p', 'mm', 'a4');
+  const pdfWidth = pdf.internal.pageSize.getWidth();
+  const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+  pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+  pdf.save('CV-Jhonathan-Anota.pdf');
+};
+
   return (
     <div style={{
       minHeight: "100vh",
@@ -124,19 +137,30 @@ export default function CV() {
         <span style={{ fontFamily: "'Playfair Display', serif", fontSize: "16px", color: accent, letterSpacing: "1px" }}>
           CV JAB
         </span>
-        <button
-          className="toggle-btn"
-          onClick={() => setDark(!dark)}
-          style={{
-            background: "none", border: `1px solid ${border}`, borderRadius: "20px",
-            padding: "6px 16px", cursor: "pointer", color: text, fontSize: "12px",
-            transition: "all 0.3s", display: "flex", alignItems: "center", gap: "6px",
-          }}>
-          {dark ? "☀️ Claro" : "🌙 Oscuro"}
-        </button>
+        <div style={{ display: "flex", gap: "8px" }}>
+          <button
+            onClick={downloadPDF}
+            style={{
+              background: accent, border: "none", borderRadius: "20px",
+              padding: "6px 16px", cursor: "pointer", color: "#fff", fontSize: "12px",
+              transition: "all 0.3s", display: "flex", alignItems: "center", gap: "6px",
+            }}>
+            📄 Descargar PDF
+          </button>
+          <button
+            className="toggle-btn"
+            onClick={() => setDark(!dark)}
+            style={{
+              background: "none", border: `1px solid ${border}`, borderRadius: "20px",
+              padding: "6px 16px", cursor: "pointer", color: text, fontSize: "12px",
+              transition: "all 0.3s", display: "flex", alignItems: "center", gap: "6px",
+            }}>
+            {dark ? "☀️ Claro" : "🌙 Oscuro"}
+          </button>
+        </div>
       </div>
 
-      <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "40px 24px", display: "grid", gridTemplateColumns: "300px 1fr", gap: "32px" }}>
+      <div id="cv-content" style={{ maxWidth: "1100px", margin: "0 auto", padding: "40px 24px", display: "grid", gridTemplateColumns: "300px 1fr", gap: "32px" }}>
 
         {/* LEFT COLUMN */}
         <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
@@ -168,10 +192,31 @@ export default function CV() {
 
             <div style={{ width: "40px", height: "2px", background: accent, margin: "16px auto" }} />
 
-            <p style={{ fontSize: "13px", color: textMuted, lineHeight: "1.7" }}>
-              {cvData.about.substring(0, 180)}...
-            </p>
-          </div>
+            {/* Soft skills chips */}
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", justifyContent: "center", marginTop: "8px"}}>
+              {[
+                { icon: "🤝", label: "Colaboración interdisciplinaria" },
+                { icon: "⚡", label: "Agilidad de aprendizaje" },
+                { icon: "🔄", label: "Flexibilidad operativa ante cambios de entorno" },
+                { icon: "✅", label: "Compromiso con la excelencia y cumplimiento de objetivos" },
+                { icon: "🎨", label: "Desarrollo de interfaces centradas en el usuario (UI/UX)" },
+              ] .map ((skill, i) => (
+                <span key={1} style={{
+                  background: `#2563EB18`,
+                  color: "#2563EB",
+                  border: `1px solid #2563EB40`,
+                  borderRadius: "20px",
+                  padding "5px 12px",
+                  fontSize: "12px",
+                  fontWeight: "500",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "5px",
+                }} >
+                  {skill.icon} {skill.label}
+                </span>
+              ))}
+            </div>
 
           {/* Contact */}
           <div className="fade-in" style={{
