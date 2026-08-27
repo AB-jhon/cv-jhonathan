@@ -12,6 +12,7 @@ const cvData = {
     address: "Gral. Jesús Carranza #41, Col. Ampliación Caracol, C.P. 15650 CDMX",
     email: "jhonathanbadillo3@gmail.com",
     github: "https://github.com/AB-jhon",
+    compendio: "https://compendio-desarrollo-web.vercel.app/"
   },
   skills: {
     analisis: ["SQL Server (T-SQL)", "Power BI", "Power Query", "Excel Avanzado", "FastReport"],
@@ -219,7 +220,7 @@ export default function CV() {
               { icon: "📍", val: cvData.contact.address },
               { icon: "✉️", val: cvData.contact.email, link: `mailto:${cvData.contact.email}` },
               { icon: "🐙", val: "GitHub", link: cvData.contact.github },
-              { icon: "🌐", val: "Portfolio Web", link: cvData.contact.web },
+              { icon: "🌐", val: "Compendio de desarrollo Web", link: cvData.contact.compendio },
             ].map((c, i) => (
               <div key={i} style={{ display: "flex", gap: "10px", marginBottom: "12px", alignItems: "flex-start" }}>
                 <span style={{ fontSize: "14px", marginTop: "2px" }}>{c.icon}</span>
