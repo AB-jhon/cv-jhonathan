@@ -372,9 +372,9 @@ export default function CV() {
               <div style={{ position: "absolute", left: "7px", top: "8px", bottom: "8px", width: "2px", background: `linear-gradient(to bottom, ${accent}, #6366F1)`, borderRadius: "2px" }} />
               {[
                 { year: "2010", label: "Inicio de Ingeniería en Sistemas" },
-                { year: "2014", label: "Egreso universitario — Extend Solution" },
-                { year: "2016", label: "Especialidad en Diseño Web — Compartamos Banco" },
-                { year: "2019", label: "INFOBLOCK — Certificado BD" },
+                { year: "2014", label: "Egreso universitario — SEDATU" },
+                { year: "2017", label: "Especialidad en Diseño Web — Compartamos Banco" },
+                { year: "2019", label: "Certificado BD — INFOBLOCK" },
                 { year: "2025", label: "SQL Server Cert. — Diseño Web Profesional" },
               ].map((t, i) => (
                 <div key={i} style={{ display: "flex", gap: "20px", marginBottom: "16px", paddingLeft: "24px", position: "relative" }}>
