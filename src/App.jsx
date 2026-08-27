@@ -4,20 +4,20 @@ import foto from './assets/foto.jpeg'
 
 const cvData = {
   name: "Jhonathan Anota",
-  title: "Ing. en Sistemas Computacionales",
+  title: "Data Analyst | SQL Server | Power BI | Business Intelligence & Web Developer",
   about:
-    "Ingeniero de software con más de 10 años de experiencia técnica en optimización de sistemas y gestión de bases de datos SQL Server. Actualmente evolucionando mi stack tecnológico hacia el desarrollo moderno con React y Python. Me destaco por mi capacidad de aprendizaje autodidacta y mi experiencia resolviendo problemas complejos en aplicaciones e implementación de ecosistemas.",
+    "Ingeniero en Sistemas Computacionales especializado en el análisis de información operativa, administración de bases de datos, generación de KPIs y desarrollo de soluciones digitales para la toma de decisiones empresariales.",
   contact: {
     phone: "5544762718",
-    address: "Cañito #25, Col. San Diego Ocoyoacac, C.P. 11290 CDMX",
+    address: "Gral. Jesús Carranza #41, Col. Ampliación Caracol, C.P. 15650 CDMX",
     email: "jhonathanbadillo3@gmail.com",
-    github: "https://github.com/AB-jhon/compendio-desarrollo-web",
-    web: "https://compendio-desarrollo-web.vercel.app/",
+    github: "https://github.com/AB-jhon",
   },
   skills: {
-    solid: ["SQL Server (T-SQL)", "C++", "Visual Basic", "Power BI"],
-    modern: ["React.js", "Python", "JavaScript ES6+", "Git"],
-    infra: ["Active Directory", "VPN", "Implementación de Software"],
+    analisis: ["SQL Server (T-SQL)", "Power BI", "Power Query", "Excel Avanzado", "FastReport"],
+    desarrollo: ["React.js", "JavaScript (ES6+)", "Vite", "HTML5 / CSS3", "Tailwind CSS / UI-UX"],
+    bases: ["PostgreSQL", "Supabase", "Python", "C# / .NET"],
+    herramientas: ["Git", "GitHub", "Vercel", "Netlify", "VS Code"],
     languages: ["Inglés (Nivel A1 - Estudiando activamente para alcanzar B1)"],
   },
   education: [
@@ -33,11 +33,11 @@ const cvData = {
       role: "Ingeniero de implementación",
       years: "2019 – 2025",
       items: [
-        "Coordiné equipos de ingenieros de soporte en sitio, gestionando la mesa de atención y resolución de incidencias técnicas críticas.",
-        "Lideré la personalización de interfaces de usuarios para sistemas de nómina, aplicando principios de arquitectura modular.",
-        "Diseñé y optimicé reportes personalizados utilizando FastReport (C++) y Power BI, con un enfoque en usabilidad y entrega de información estratégica mediante dashboards ejecutivos.",
-        "Gestioné el diseño de consultas complejas y la optimización de bases de datos (SQL Server), estableciendo las bases fundamentales para el manejo de estados de información y flujos de datos.",
-        "Elaboré solicitudes formales de soporte y bitácoras técnicas; además, capacité a clientes en el uso de la plataforma digital (TimeBLOCK), incrementando significativamente la tasa de adopción de la herramienta.",
+        "Lideré y coordiné equipos de soporte en sitio, gestionando la mesa de atención para la resolución eficiente de incidencias técnicas críticas.",
+        "Personalicé interfaces de usuario para sistemas de nómina y asistencia (TimeBLOCK), aplicando principios de UI/UX y arquitectura modular.",
+        "Diseñé y optimicé reportes operativos y dashboards ejecutivos en Power BI y FastReport, transformando datos de asistencia y prenómina en métricas estratégicas para la toma de decisiones.",
+        "Desarrollé consultas complejas y optimicé bases de datos en SQL Server, mejorando el flujo de información operativa y la gestión de reglas de negocio.",
+        "Capacité a clientes en el uso de la plataforma TimeBLOCK y elaboré documentación técnica, incrementando la adopción digital de la herramienta y reduciendo re-trabajos de soporte.",
       ],
     },
     {
@@ -45,30 +45,31 @@ const cvData = {
       role: "Desarrollo y soporte técnico",
       years: "2016 – 2019",
       items: [
-        "Configuré y administré aplicaciones críticas para la operación institucional, incluyendo el ecosistema de Outlook corporativo, JKASSA (Software especializado en microfinanzas).",
-        "Desarrollé macros y soluciones en Visual Basic, logrando la automatización de procesos operativos y administrativos que redujeron significativamente el margen de error manual.",
-        "Ejecuté mantenimiento preventivo y correctivo de software, diagnosticando y resolviendo incidencias técnicas para asegurar el correcto funcionamiento de los sistemas financieros.",
-        "Brindé soporte técnico directo a usuarios finales, documentando soluciones técnicas y generando guías de usuario para fomentar la autonomía del personal.",
+        "Administré y configuré aplicaciones operativas críticas, incluyendo el software financiero JKASSA y herramientas institucionales, garantizando la alta disponibilidad del sistema.",
+        "Desarrollé macros y automatizaciones en Visual Basic, optimizando flujos de trabajo administrativos y reduciendo significativamente los tiempos de procesamiento operativo.",
+        "Diagnostiqué y resolví incidencias en sistemas financieros, ejecutando mantenimiento correctivo y optimizando la continuidad del negocio.",
+        "Documenté procesos técnicos y elaboré guías operativas, facilitando la adopción de herramientas digitales y reduciendo recurrencia de tickets de soporte.",
       ],
     },
     {
-      company: "EXTEND SOLUTION",
-      role: "Administración y soporte técnico",
+      company: "SEDATU (Secretaria de Desarrollo Agrario, Territorial y Urbano)",
+      role: "Administrador de Sistemas & Soporte de TI",
       years: "2014 – 2016",
       items: [
-        "Implementé y configuré soluciones seguras de acceso remoto mediante VPN y administración de identidades en Active Directory, optimizando la accesibilidad y productividad de los colaboradores internos.",
-        "Administré bases de datos en SQL Server, garantizando la alta disponibilidad, integridad y rendimiento mediante monitoreo proactivo, planes de mantenimiento y optimización de consultas (T-SQL).",
-        "Brindé soporte técnico de segundo nivel en infraestructura de TI, resolviendo incidencias complejas de conectividad, redes y servicios críticos.",
-        "Gestioné políticas de seguridad (GPO) y privilegios de usuario en Active Directory, garantizando el cumplimiento de los estándares y protocolos de seguridad informática de la institución.",
+        "Administré la infraestructura tecnológica institucional, garantizando la disponibilidad y la continuidad operativa de los servicios para usuarios de distintas áreas.",
+        "Gestioné cuentas de usuario, perfiles y políticas de acceso mediante Active Directory, asegurando el cumplimiento de los estándares de seguridad informática.",
+        "Elaboré diagnósticos técnicos y resolví incidencias de segundo nivel, estandarizando procesos de atención para reducir la recurrencia de fallas operativas.",
+        "Coordiné requerimientos tecnológicos con áreas internas y brindé capacitación, facilitando la adopción de herramientas institucionales y la optimización de procesos.",
       ],
     },
   ],
 };
 
 const skillColors = {
-  solid: "#2563EB",
-  modern: "#0891B2",
-  infra: "#6366F1",
+  analisis: "#2563EB",
+  desarrollo: "#0891B2",
+  bases: "#6366F1",
+  herramientas: "#52F5A3",
 };
 
 export default function CV() {
@@ -168,7 +169,7 @@ export default function CV() {
               Jhonathan Anota
             </h1>
             <p style={{ color: accent, fontSize: "12px", fontWeight: "600", letterSpacing: "1.5px", textTransform: "uppercase" }}>
-              Ing. en Sistemas Computacionales
+              Data Analyst | SQL Server | Power BI | Business Intelligence & Web Developer
             </p>
 
             <div style={{ width: "40px", height: "2px", background: accent, margin: "16px auto" }} />
@@ -245,9 +246,10 @@ export default function CV() {
               Habilidades
             </h3>
             {[
-              { label: "Core Sólido", items: cvData.skills.solid, color: "#2563EB" },
-              { label: "Modern Stack", items: cvData.skills.modern, color: "#0891B2" },
-              { label: "Infraestructura", items: cvData.skills.infra, color: "#6366F1" },
+              { label: "Análisis & BI", items: cvData.skills.analisis, color: "#2563EB" },
+              { label: "Desarrollo Web & Frontend", items: cvData.skills.desarrollo, color: "#0891B2" },
+              { label: "Bases de Datos & Scripting", items: cvData.skills.bases, color: "#6366F1" },
+              { label: "Herramientas & Deployment", items: cvData.skills.herramientas, color: "#10B981" },
             ].map((group, gi) => (
               <div key={gi} style={{ marginBottom: "16px" }}>
                 <p style={{ fontSize: "11px", color: textMuted, marginBottom: "8px", fontWeight: "500" }}>{group.label}</p>
