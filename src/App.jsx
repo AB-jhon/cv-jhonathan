@@ -23,7 +23,7 @@ const cvData = {
   },
   education: [
     { title: "Lic. Ingeniería en Sistemas Computacionales", school: "Centro Universitario San Ángel", years: "2010 - 2014" },
-    { title: "Especialidad en Diseño Web", school: "Centro Universitario San Ángel", years: "2014 - 2016" },
+    { title: "Especialidad en Diseño Web", school: "Centro Universitario San Ángel", years: "2017 - 2018" },
     { title: "Certificado en Administración de Bases de Datos", school: "INTELLEMX Online", years: "2019" },
     { title: "Certificado SQL Server", school: "Udemy", years: "2025" },
     { title: "Diseño Web Profesional enfocado en arquitecturas modernas", school: "Udemy", years: "En curso" },
