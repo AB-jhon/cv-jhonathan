@@ -159,7 +159,7 @@ export default function CV() {
             <img src={foto} alt="Jhonathan Anota Badillo"
               style={{
                 width: "170px", height: "200px", borderRadius: "50%",
-                objectFit: "cover", objectPosition: "center 25%",
+                objectFit: "cover", objectPosition: "center 5%",
                 margin: "0 auto 16px", display: "block",
                 boxShadow: "0 8px 24px rgba(37,99,235,0.4)",
                 border: "3px solid #2563EB",
